@@ -14,6 +14,7 @@ sc = pygame.display.set_mode(RES)
 game_sc = pygame.Surface(GAME_RES)
 clock = pygame.time.Clock()
 pygame.mixer.music.load('Twister Tetris.mp3')
+pygame.mixer.music.play(-1)
 
 
 grid = [pygame.Rect(x * TILE, y * TILE, TILE, TILE) for x in range(W) for y in range(H)]
